@@ -1,0 +1,1 @@
+Slide link: https://theprimeagen.github.io/web3-smart-contracts/your-first-contract#your-first-contract
