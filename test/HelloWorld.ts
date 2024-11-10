@@ -11,7 +11,7 @@ describe("hello world", function() {
         // 2.
         const HelloWorld = await ethers.getContractFactory("HelloWorld");
         const hello = await HelloWorld.deploy(); // deploys it to the network
-        await hello.waitForDeployment(); //  ensures that your contract has been confirmed to be deployed by the network
+        await hello.deployed(); //  ensures that your contract has been confirmed to be deployed by the network
 
         // 3.
         expect(await hello.hello()).to.equal("Hello, World");
