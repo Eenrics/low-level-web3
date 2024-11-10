@@ -6,7 +6,12 @@
   "author": "Abenezer Eshetie <ebenezeresh525@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile": "hardhat compile"
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:scripts": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:network": "hardhat node",
+    "webpack": "webpack",
+    "serve": "python3 -m http.server 6969 -d dist"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
@@ -24,13 +29,18 @@
     "@types/mocha": "^10.0.9",
     "@types/node": "^22.9.0",
     "chai": "4",
+    "dotenv": "^16.4.5",
     "ethereum-waffle": "^4.0.10",
     "ethers": "5.5.0",
     "hardhat": "^2.22.15",
     "hardhat-gas-reporter": "^2.2.1",
+    "html-webpack-plugin": "^5.6.3",
     "solidity-coverage": "^0.8.13",
+    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
   }
 }
