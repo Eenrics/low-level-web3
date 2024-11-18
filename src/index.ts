@@ -45,7 +45,8 @@ async function run() {
     const button = document.createElement("button");
     button.innerHTML = "Increment";
     button.onclick = async () => {
-        await counter.count();
+        const tx = await counter.count();
+        await tx.wait()
         setCounter();
     }
     // document.body.innerHTML = await counter.hello();
