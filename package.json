@@ -9,6 +9,7 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy:scripts": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:contract": "hardhat run --network localhost",
     "deploy:network": "hardhat node",
     "webpack": "webpack",
     "serve": "python3 -m http.server 6969 -d dist"
