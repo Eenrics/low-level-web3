@@ -10,6 +10,11 @@ module.exports = {
       //   mnemonic: 1234,
       // },
       chainId: 1337,
+      networks: {
+        hardhat: {
+          chainId: 1337,
+        }
+      }
     },
   },
 };
